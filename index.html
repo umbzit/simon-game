@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Simon Game</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css'>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+<div class="container">
+  <div id='console' class="col-centered">
+    <div id="brand" class="text-center">FCCGAMES</div>
+     <div class="row">
+       <div class="col colButtons">
+         <div id="red" onClick="checkMove(this.id)"></div>
+         <div id="green" onClick="checkMove(this.id)"></div>
+       </div>
+       <div class="col colButtons">
+         <div id="blue" onClick="checkMove(this.id)"></div>
+         <div id="yellow" onClick="checkMove(this.id)"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-4 col-md-6">
+        <div id="lcd" class="text-center">--</div>
+        <div class="text-center" id="lcdTxt" >COUNT</div>
+      </div>
+      <div class="col">
+      <div class="container">  
+        <div class="row" id="controlBtns">
+        <div class="colClear" >
+        <div class="btn-circle" id="controlBtnsStart" onClick="startLoop()"><span class="controlBtnsTxt">START</span></div>
+          </div>
+ </div>
+    <div class="row">
+<div class="col-4 colClear colStrict">
+          <div class="btn-circle" id="controlBtnsStrict" onClick="startStrict()"><span class="controlBtnsTxt">STRICT</span></div></div>
+   <div class="col colClear"><div class="led"></div>
+          </div>       
+   </div>
+   </div>
+    </div>
+      </div>
+  </div>
+</div>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script  src="./script.js"></script>
+
+</body>
+</html>
